@@ -1,13 +1,73 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.main_box {
+    padding: 15px;
+    height: 80vh;
+    width: 30vw;
+    margin: 30px auto;
+    background-color: lightgray;
+}
+
+.todo_input {
+    width: 100%;
+    height: 60px;
+    font-size: larger;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid gray;
+    outline: none;
+    color: rgb(103, 101, 101) !important;
+}
+
+.todo_container {
+    width: 80%;
+}
+
+.todo_one {
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.todo_two {
+    background-color: red;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    border-radius: 10px;
+}
+
+.done {
+    background-color: chartreuse !important;
+}
+
+.head_inputs {
+    width: 100%;
+    height: 20%;
+}
+
+@media only screen and (max-width: 1500px) {
+    .main_box {
+        height: 80vh;
+        width: 50vw;
+    }
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 400px) {
+    .main_box {
+        height: 80vh;
+        width: 100vw;
+    }
 }
